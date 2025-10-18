@@ -1,0 +1,85 @@
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mt-200 {
+    margin-top: 200px;
+
+    @include screen-992 {
+        margin-top: 80px;
+    }
+}
+
+.pt-100 {
+    padding-top: 100px; 
+}
+
+
+.container-1920 {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 40px;
+    
+    @include screen-768 {
+        padding: 0 15px;
+    }
+}

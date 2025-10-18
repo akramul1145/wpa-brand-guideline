@@ -1,0 +1,14 @@
+body {
+    font-family: ABC Walter Neue, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background: $bg-color;
+    color: $color-white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: ABC Walter Neue, sans-serif;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    line-height: 1.4em;
+}
