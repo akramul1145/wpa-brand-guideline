@@ -1,0 +1,46 @@
+.wpa_sidenav {
+    position: sticky; 
+    top: 70px;
+}
+
+.wpa_sidebar_navigation {
+    li {
+        + li {
+            margin-top: 3px;
+        }
+        a {
+            font-size: 15px; 
+            font-weight: 400;
+            color: rgba($color-white, 0.2);
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+
+        &.has-submenu {
+            display: inline-block;
+            border-top: 1px solid rgba($color-white, 0.2);
+            border-bottom: 1px solid rgba($color-white, 0.2);
+            a {
+                color: $color-white;
+            }
+        }
+
+        .wpa_sidebar_submenu {
+            margin-left: 22px;
+            list-style-type: disc;
+
+
+            li {
+                a { 
+                    color: $color-white;
+
+                    &:hover {
+                        color: rgba($color-white, 0.8);
+                    }
+                }
+            }
+        }
+    }
+}

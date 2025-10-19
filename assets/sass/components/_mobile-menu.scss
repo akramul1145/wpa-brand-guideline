@@ -1,0 +1,46 @@
+/** Mobile Menu **/
+.mobile_menu_open {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    z-index: 50;
+    background: $bg-color;
+}
+.wpa_mobile_menu_toggle {
+    padding: 12px 24px;
+    background: $color-white;
+    border-radius: 30px;
+    font-size: 20x;
+    font-weight: 500;
+}
+.wpa_mobile_menu {
+    text-align: right;
+    padding: 24px;
+    background: $bg-color;
+    position: fixed;
+    top: 0; 
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    display: none;
+
+    .wpa_mobile_nav {
+        padding-top: 60px;
+        display: none;
+        width: 100%;
+        display: block;
+        text-align: left;
+        
+        li {
+            + li {
+                margin-top: 3px;
+            }
+            a {
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+}

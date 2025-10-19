@@ -34,14 +34,3 @@
     }
 }
 
-.wpa_btn_black {
-    padding: 12px 24px;
-    background: rgba($color-white, 0.1);
-    font-size: 15px;
-    font-weight: 500;
-
-    &:hover {
-        background: $color-white;
-        color: $color-black;
-    }
-}
