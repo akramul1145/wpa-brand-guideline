@@ -247,8 +247,18 @@ h1, h2, h3, h4, h5, h6 {
   .wpa_title_block h2.text-gray {
     color: rgba(255, 255, 255, 0.4); }
 
+.wpa_title_block h3 {
+  font-size: 40px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.2);
+  margin-top: -30px; }
+
 .wpa_title_block p {
   font-size: 20px; }
+
+.wpa_title_block .title_block_caption span {
+  color: #ffffff;
+  font-size: 15px; }
 
 .wpa_image_block h2 {
   font-size: 50px; }
@@ -276,6 +286,13 @@ h1, h2, h3, h4, h5, h6 {
   @media (max-width: 991px) {
     .wpa_title_with_border {
       font-size: 25px; } }
+
+.wpa_single_image span {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 300;
+  margin-top: 12px;
+  display: block; }
 
 /** main screen styles **/
 .wpa_main_screen {
