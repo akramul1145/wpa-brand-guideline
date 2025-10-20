@@ -149,7 +149,8 @@ h1, h2, h3, h4, h5, h6 {
 .wpa_sidenav {
   position: -webkit-sticky;
   position: sticky;
-  top: 70px; }
+  top: 70px;
+  overflow: hidden; }
 
 .wpa_sidebar_navigation li + li {
   margin-top: 3px; }
@@ -175,6 +176,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff; }
     .wpa_sidebar_navigation li .wpa_sidebar_submenu li a:hover {
       color: rgba(255, 255, 255, 0.8); }
+  .wpa_sidebar_navigation li .wpa_sidebar_submenu li.subtitle {
+    margin-left: -22px; }
 
 .mb-32 {
   margin-bottom: 32px; }
@@ -195,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 200px; }
   @media (max-width: 991px) {
     .spacer-200 {
-      height: 50px; } }
+      height: 100px; } }
 
 .container-1920 {
   max-width: 1920px;
@@ -239,11 +242,12 @@ h1, h2, h3, h4, h5, h6 {
   .wpa_heading_block h1 {
     font-size: 50px; }
   .wpa_heading_block p.lead {
-    font-size: 20px; } }
+    font-size: 20px;
+    line-height: 1.4em; } }
 
 .wpa_title_block h2 {
-  font-size: 40px;
-  font-weight: 400; }
+  font-size: 50px;
+  font-weight: 700; }
   .wpa_title_block h2.text-gray {
     color: rgba(255, 255, 255, 0.4); }
 
@@ -259,6 +263,14 @@ h1, h2, h3, h4, h5, h6 {
 .wpa_title_block .title_block_caption span {
   color: #ffffff;
   font-size: 15px; }
+
+@media (max-width: 991px) {
+  .wpa_title_block h2 {
+    font-size: 25px; }
+  .wpa_title_block h3 {
+    font-size: 20px; }
+  .wpa_title_block p {
+    font-size: 15px; } }
 
 .wpa_image_block h2 {
   font-size: 50px; }

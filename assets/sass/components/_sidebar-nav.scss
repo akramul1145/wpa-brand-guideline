@@ -1,6 +1,7 @@
 .wpa_sidenav {
     position: sticky; 
     top: 70px;
+    overflow: hidden;
 }
 
 .wpa_sidebar_navigation {
@@ -39,6 +40,10 @@
                     &:hover {
                         color: rgba($color-white, 0.8);
                     }
+                }
+
+                &.subtitle {
+                    margin-left: -22px;
                 }
             }
         }
