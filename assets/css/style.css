@@ -194,6 +194,12 @@ h1, h2, h3, h4, h5, h6 {
 .pt-100 {
   padding-top: 100px; }
 
+.mx-600 {
+  max-width: 600px; }
+
+.mx-700 {
+  max-width: 700px; }
+
 .spacer-200 {
   height: 200px; }
   @media (max-width: 991px) {
@@ -251,6 +257,9 @@ h1, h2, h3, h4, h5, h6 {
   .wpa_title_block h2.text-gray {
     color: rgba(255, 255, 255, 0.4); }
 
+.wpa_title_block h2.title-sm {
+  font-size: 40px; }
+
 .wpa_title_block h3 {
   font-size: 40px;
   font-weight: 300;
@@ -260,24 +269,36 @@ h1, h2, h3, h4, h5, h6 {
 .wpa_title_block p {
   font-size: 20px; }
 
+.wpa_title_block p.lead {
+  font-size: 40px;
+  line-height: 1.2em; }
+
 .wpa_title_block .title_block_caption span {
   color: #ffffff;
   font-size: 15px; }
 
+.wpa_title_block .list-style-type-disc {
+  padding-left: 20px;
+  list-style-type: disc; }
+
 @media (max-width: 991px) {
-  .wpa_title_block h2 {
-    font-size: 25px; }
+  .wpa_title_block h2, .wpa_title_block h2.title-sm {
+    font-size: 25px;
+    font-weight: 400; }
   .wpa_title_block h3 {
     font-size: 20px; }
   .wpa_title_block p {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .wpa_title_block p.lead {
+    font-size: 20px; } }
 
 .wpa_image_block h2 {
   font-size: 50px; }
 
 @media (max-width: 991px) {
   .wpa_image_block h2 {
-    font-size: 25px; } }
+    font-size: 25px;
+    font-weight: 400; } }
 
 .wpa_download_btn {
   display: block;
@@ -402,6 +423,16 @@ h1, h2, h3, h4, h5, h6 {
   background: -webkit-linear-gradient(right, #F1DDC5 0%, #FFC876 100%);
   background: -o-linear-gradient(right, #F1DDC5 0%, #FFC876 100%);
   background: linear-gradient(270deg, #F1DDC5 0%, #FFC876 100%); }
+
+.wpa_text_block span, .wpa_text_block p {
+  font-size: 20px; }
+
+.wpa_text_block span {
+  color: rgba(255, 255, 255, 0.4); }
+
+@media (max-width: 991px) {
+  .wpa_text_block span, .wpa_text_block p {
+    font-size: 15px; } }
 
 /** main screen styles **/
 .wpa_main_screen {

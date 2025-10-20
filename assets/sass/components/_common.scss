@@ -18,6 +18,14 @@
     padding-top: 100px; 
 }
 
+.mx-600 {
+    max-width: 600px;
+}
+
+.mx-700 {
+    max-width: 700px;
+}
+
 
 .spacer-200 {
     height: 200px;
@@ -103,6 +111,10 @@
         }
     }
 
+    h2.title-sm {
+        font-size: 40px;
+    }
+
     h3 {
         font-size: 40px; 
         font-weight: 300;
@@ -114,6 +126,11 @@
         font-size: 20px;
     }
 
+    p.lead {
+        font-size: 40px; 
+        line-height: 1.2em;
+    }
+
     .title_block_caption {
         span {
             color: $color-white; 
@@ -122,9 +139,15 @@
         }
     }
 
+    .list-style-type-disc {
+        padding-left: 20px;
+        list-style-type:  disc;
+    }
+
     @include screen-992 {
-        h2 {
+        h2, h2.title-sm {
             font-size: 25px; 
+            font-weight: 400;
         }
         h3 {
             font-size: 20px;
@@ -132,6 +155,10 @@
 
         p {
             font-size: 15px;
+        }
+
+        p.lead {
+            font-size: 20px;
         }
     }
 }
@@ -145,6 +172,7 @@
     @include screen-992 {
         h2 {
             font-size: 25px;
+            font-weight: 400;
         }
     }
 }
@@ -284,4 +312,23 @@
 
 .white-sand-block {
     background: linear-gradient(270deg, #F1DDC5 0%, #FFC876 100%);
+}
+
+
+
+.wpa_text_block {
+    span, p {
+        font-size: 20px;
+    }
+
+    span {
+        color: rgba($color-white, 0.4);
+    }
+
+    @include screen-992 {
+        span, p {
+            font-size: 15px;
+        }
+    }
+
 }
