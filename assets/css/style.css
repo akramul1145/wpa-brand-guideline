@@ -385,6 +385,24 @@ h1, h2, h3, h4, h5, h6 {
   background: -o-linear-gradient(right, #63646F 0%, #FFE6C3 100%);
   background: linear-gradient(270deg, #63646F 0%, #FFE6C3 100%); }
 
+.thunder-storm-block {
+  background: -webkit-gradient(linear, right top, left top, from(#595754), to(#C7CBD6));
+  background: -webkit-linear-gradient(right, #595754 0%, #C7CBD6 100%);
+  background: -o-linear-gradient(right, #595754 0%, #C7CBD6 100%);
+  background: linear-gradient(270deg, #595754 0%, #C7CBD6 100%); }
+
+.clear-sky-block {
+  background: -webkit-gradient(linear, right top, left top, from(#E6E8EA), to(#A8C8FA));
+  background: -webkit-linear-gradient(right, #E6E8EA 0%, #A8C8FA 100%);
+  background: -o-linear-gradient(right, #E6E8EA 0%, #A8C8FA 100%);
+  background: linear-gradient(270deg, #E6E8EA 0%, #A8C8FA 100%); }
+
+.white-sand-block {
+  background: -webkit-gradient(linear, right top, left top, from(#F1DDC5), to(#FFC876));
+  background: -webkit-linear-gradient(right, #F1DDC5 0%, #FFC876 100%);
+  background: -o-linear-gradient(right, #F1DDC5 0%, #FFC876 100%);
+  background: linear-gradient(270deg, #F1DDC5 0%, #FFC876 100%); }
+
 /** main screen styles **/
 .wpa_main_screen {
   display: -webkit-box;
