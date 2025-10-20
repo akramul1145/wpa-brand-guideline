@@ -306,6 +306,85 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 12px;
   display: block; }
 
+.wpa_color_block {
+  padding: 32px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 40px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .wpa_color_block span {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400; }
+  .wpa_color_block ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 15px;
+    width: 80%; }
+    .wpa_color_block ul li {
+      color: #000000;
+      font-size: 15px;
+      font-weight: 400; }
+      .wpa_color_block ul li span {
+        color: rgba(0, 0, 0, 0.15);
+        margin-right: 6px; }
+  .wpa_color_block.gradient ul {
+    width: auto; }
+  @media (max-width: 991px) {
+    .wpa_color_block {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .wpa_color_block ul {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px; }
+        .wpa_color_block ul li {
+          width: 100%; } }
+
+.white-block {
+  background: #ffffff; }
+
+.black-block {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.5); }
+  .black-block ul li span {
+    color: rgba(255, 255, 255, 0.2); }
+
+.sand-block {
+  background: #FFD89E; }
+
+.sky-block {
+  background: #CFE2FF; }
+
+.sunrise-block {
+  background: -webkit-gradient(linear, right top, left top, from(#CCCED4), to(#FFD9AA));
+  background: -webkit-linear-gradient(right, #CCCED4 0%, #FFD9AA 100%);
+  background: -o-linear-gradient(right, #CCCED4 0%, #FFD9AA 100%);
+  background: linear-gradient(270deg, #CCCED4 0%, #FFD9AA 100%); }
+
+.sunset-block {
+  background: -webkit-gradient(linear, right top, left top, from(#FFF1E0), to(#BDC8E8));
+  background: -webkit-linear-gradient(right, #FFF1E0 0%, #BDC8E8 100%);
+  background: -o-linear-gradient(right, #FFF1E0 0%, #BDC8E8 100%);
+  background: linear-gradient(270deg, #FFF1E0 0%, #BDC8E8 100%); }
+
+.sand-storm-block {
+  background: -webkit-gradient(linear, right top, left top, from(#63646F), to(#FFE6C3));
+  background: -webkit-linear-gradient(right, #63646F 0%, #FFE6C3 100%);
+  background: -o-linear-gradient(right, #63646F 0%, #FFE6C3 100%);
+  background: linear-gradient(270deg, #63646F 0%, #FFE6C3 100%); }
+
 /** main screen styles **/
 .wpa_main_screen {
   display: -webkit-box;

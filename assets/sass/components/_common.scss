@@ -118,6 +118,7 @@
         span {
             color: $color-white; 
             font-size: 15px;
+            
         }
     }
 
@@ -183,4 +184,92 @@
         margin-top: 12px;
         display: block;
     }
+}
+
+.wpa_color_block {
+    padding: 32px 25px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+
+    span {
+        color: $color-black;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 80%;
+
+        li {
+            color:  $color-black;
+            font-size: 15px;
+            font-weight: 400;
+
+            span {
+                color: rgba($color-black, 0.15);
+                margin-right: 6px;
+            }
+        }
+    }
+
+    &.gradient {
+        ul {
+            width: auto;
+        }
+    }
+
+    @include screen-992 {
+        flex-wrap: wrap;
+
+        ul {
+            flex-wrap: wrap;
+            width: 100%; 
+            gap: 10px;
+            li {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.white-block {
+    background: $color-white;
+}
+
+.black-block {
+    background: $color-black;
+    border: 1px solid rgba($color-white, 0.5);
+
+    ul {
+        li {
+            span {
+                color: rgba($color-white, 0.2);
+            }
+        }
+    }
+}
+
+.sand-block {
+    background: #FFD89E;
+}
+
+.sky-block {
+    background: #CFE2FF;
+}
+
+.sunrise-block {
+    background: linear-gradient(270deg, #CCCED4 0%, #FFD9AA 100%);
+}
+
+.sunset-block {
+    background: linear-gradient(270deg, #FFF1E0 0%, #BDC8E8 100%);
+}
+
+.sand-storm-block {
+    background: linear-gradient(270deg, #63646F 0%, #FFE6C3 100%);
 }
