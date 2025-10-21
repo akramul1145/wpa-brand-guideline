@@ -150,7 +150,21 @@ h1, h2, h3, h4, h5, h6 {
   position: -webkit-sticky;
   position: sticky;
   top: 70px;
-  overflow: hidden; }
+  overflow: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 100px);
+  max-width: 400px; }
+  .wpa_sidenav::-webkit-scrollbar {
+    width: 8px;
+    height: 8px; }
+  .wpa_sidenav::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241, 0.798);
+    border-radius: 10px; }
+  .wpa_sidenav::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px; }
+  .wpa_sidenav::-webkit-scrollbar-thumb:hover {
+    background: #555; }
 
 .wpa_sidebar_navigation li + li {
   margin-top: 3px; }
@@ -317,6 +331,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   font-weight: 400;
   background: #323232; }
+  .wpa_download_btn:hover {
+    background: #ffffff;
+    color: #000000; }
 
 .wpa_title_with_border {
   font-size: 50px;
