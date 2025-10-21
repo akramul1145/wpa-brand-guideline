@@ -8,6 +8,7 @@
     <!-- essential stylesheet -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -42,35 +43,35 @@
                 <div class="col-lg-3 d-none d-lg-block">
                     <div class="wpa_sidenav">
                         <ul class="wpa_sidebar_navigation">
-                            <li><a href="#">00. Introduction</a></li>
-                            <li><a href="#">01. Tone Of Voice</a></li>
+                            <li><a href="introduction.html">00. Introduction</a></li>
+                            <li><a href="tone-of-voice.html">01. Tone Of Voice</a></li>
                             <li><a href="#">02. Logos</a></li>
-                            <li><a href="#">03. Color</a></li>
-                            <li><a href="#">04. Typography</a></li>
+                            <li><a href="color.html">03. Color</a></li>
+                            <li><a href="typography.html">04. Typography</a></li>
                             <li><a href="#">05. Graphic Devices</a></li>
-                            <li><a href="#">06. Grid System</a></li>
-                            <li><a href="#">07. Motion</a></li>
-                            <li><a href="#">08. Photography</a></li>
+                            <li><a href="grid-system.html">06. Grid System</a></li>
+                            <li><a href="motion.html">07. Motion</a></li>
+                            <li><a href="photography.html">08. Photography</a></li>
                             <li class="has-submenu">
-                                <a href="#">09. Digital Application</a>
+                                <a href="digital-application.html">09. Digital Application</a>
 
                                 <ul class="wpa_sidebar_submenu">
-                                    <li class="subtitle"><a href="#">9.1. Web & UI Principles</a></li>
-                                    <li><a href="#">Global Navigation System</a></li>
-                                    <li><a href="#">Layout Application</a></li>
-                                    <li><a href="#">Grid Application</a></li>
-                                    <li class="subtitle"><a href="#">9.2. Social Media Templates</a></li>
-                                    <li><a href="#">Overview</a></li>
-                                    <li><a href="#">Scalability</a></li>
-                                    <li><a href="#">Sizing & Placement</a></li>
-                                    <li><a href="#">Color Options</a></li>
-                                    <li><a href="#">Misuse</a></li>
+                                    <li class="subtitle"><a href="#web_and_ui">9.1. Web & UI Principles</a></li>
+                                    <li><a href="#gobal_navigation">Global Navigation System</a></li>
+                                    <li><a href="#layout_application">Layout Application</a></li>
+                                    <li><a href="#grid_application">Grid Application</a></li>
+                                    <li class="subtitle"><a href="#social_media">9.2. Social Media Templates</a></li>
+                                    <li><a href="#overview">Overview</a></li>
+                                    <li><a href="#scalability">Scalability</a></li>
+                                    <li><a href="#sizing">Sizing & Placement</a></li>
+                                    <li><a href="#color_options">Color Options</a></li>
+                                    <li><a href="#misuse">Misuse</a></li>
                                 </ul>
 
                             </li>
-                            <li><a href="#">10. WPA Junior Academy</a></li>
-                            <li><a href="#">11. Fixed Application</a></li>
-                            <li><a href="#">12. Resources</a></li>
+                            <li><a href="wpa-academy.html">10. WPA Junior Academy</a></li>
+                            <li><a href="fixed-application.html">11. Fixed Application</a></li>
+                            <li><a href="resources.html">12. Resources</a></li>
                         </ul>
                     </div>
                 </div>
@@ -97,11 +98,17 @@
                         </div>
 
                         
-                        <div class="wpa_title_block mt-5">
-                            <div class="title_block_caption d-none d-lg-flex align-items-center justify-content-end mb-1">
-                                <span>Show Grid</span>
+                        <div class="wpa_toggle_block mt-5">
+                            <div class="d-flex align-items-center justify-content-end mb-3">
+                                <a href="#" class="wpa_toggle_btn">
+                                    <span class="grid_show">Show Grid</span>
+                                    <span class="grid_hide">Hide Grid</span>
+                                </a>
                             </div>
-                            <img src="assets/images/digital-application/1.png" alt="Application" class="w-100">
+                            <div class="wpa_toggle_images">
+                                <img src="assets/images/digital-application/web-show-grid.png" alt="hide grid" class="w-100 grid_hide">
+                                <img src="assets/images/digital-application/web-hide-grid.png" alt="show grid" class="w-100 grid_show">
+                            </div>
                         </div>
 
 
@@ -178,15 +185,21 @@
                             <img src="assets/images/digital-application/5.png" alt="Application" class="w-100">
                         </div>
 
-                        <div class="wpa_title_block mt-5">
-                            
-                            <div class="title_block_caption d-none d-lg-flex align-items-center justify-content-end justify-content-lg-between gap-3 mb-2">
-                                <span class="d-none d-lg-block">Caption 1</span>
-                                <span>Next</span>
+                        <div class="single_carousel mt-5">
+                            <div class="slide_single">
+                                <span class="mt-3 d-none d-lg-block mb-3">The CTA button should always be placed next to a block of text.</span>
+                                <img src="assets/images/digital-application/sizing-slide-1.png" alt="Sizing" class="w-100">
+                                <span class="mt-3 d-lg-none">The CTA button should always be placed next to a block of text.</span>
                             </div>
-                            <img src="assets/images/digital-application/6.png" alt="Application" class="w-100">
-                            <div class="title_block_caption d-flex d-lg-none align-items-center mt-2">
-                                <span>Caption 1</span>
+                            <div class="slide_single">
+                                <span class="mt-3 d-none d-lg-block mb-3">Specific CTA buttons can be placed alone when needed.</span>
+                                <img src="assets/images/digital-application/sizing-slide-2.png" alt="Sizing" class="w-100">
+                                <span class="mt-3 d-lg-none">Specific CTA buttons can be placed alone when needed.</span>
+                            </div>
+                            <div class="slide_single">
+                                <span class="mt-3 d-none d-lg-block mb-3">Secondary buttons should be smaller in size.</span>
+                                <img src="assets/images/digital-application/sizing-slide-3.png" alt="Sizing" class="w-100">
+                                <span class="mt-3 d-lg-none">Secondary buttons should be smaller in size.</span>
                             </div>
                         </div>
 
@@ -241,14 +254,52 @@
                             <h2 class="text-white mb-3">Button Misuse</h2>
                             <p class="mb-4">The button has been designed with specific uses in mind, and its appearance must remain consistent at all times. It must not be altered, distorted, or decorated in any way. To preserve clarity and legibility, always follow the established guidelines. Below are common mistakes to avoid.</p>
                             
-                            <div class="title_block_caption d-none d-lg-flex align-items-center justify-content-end justify-content-lg-between gap-3 mb-2">
-                                <span class="d-none d-lg-block">Caption 1</span>
-                                <span>Show Grid</span>
+                            <div class="loop_carousel mt-5">
+                                <div class="slide_single">
+                                    <img src="assets/images/digital-application/btn-miuse-slide-1.png" alt="Misuse" class="w-100">
+                                    <span class="mt-3">Do not apply a stroke to the button</span>
+                                </div>
+                                <div class="slide_single">
+                                    <img src="assets/images/digital-application/btn-miuse-slide-2.png" alt="Misuse" class="w-100">
+                                    <span class="mt-3">Do not change fonts</span>
+                                </div>
+                                <div class="slide_single">
+                                    <img src="assets/images/digital-application/btn-miuse-slide-3.png" alt="Misuse" class="w-100">
+                                    <span class="mt-3">Do not change fonts</span>
+                                </div>
+                                <div class="slide_single">
+                                    <img src="assets/images/digital-application/btn-miuse-slide-4.png" alt="Misuse" class="w-100">
+                                    <span class="mt-3">Do not change fonts</span>
+                                </div>
+                                <div class="slide_single">
+                                    <img src="assets/images/digital-application/btn-miuse-slide-5.png" alt="Misuse" class="w-100">
+                                    <span class="mt-3">Do not change fonts</span>
+                                </div>
+                                <div class="slide_single">
+                                    <img src="assets/images/digital-application/btn-miuse-slide-6.png" alt="Misuse" class="w-100">
+                                    <span class="mt-3">Do not change fonts</span>
+                                </div>
+                                <div class="slide_single">
+                                    <img src="assets/images/digital-application/btn-miuse-slide-7.png" alt="Misuse" class="w-100">
+                                    <span class="mt-3">Do not change fonts</span>
+                                </div>
+                                <div class="slide_single">
+                                    <img src="assets/images/digital-application/btn-miuse-slide-8.png" alt="Misuse" class="w-100">
+                                    <span class="mt-3">Do not change fonts</span>
+                                </div>
+                                <div class="slide_single">
+                                    <img src="assets/images/digital-application/btn-miuse-slide-9.png" alt="Misuse" class="w-100">
+                                    <span class="mt-3">Do not change fonts</span>
+                                </div>
+                                <div class="slide_single">
+                                    <img src="assets/images/digital-application/btn-miuse-slide-10.png" alt="Misuse" class="w-100">
+                                    <span class="mt-3">Do not change fonts</span>
+                                </div>
                             </div>
-                            <img src="assets/images/digital-application/12.png" alt="setup" class="w-100">
-                            <div class="title_block_caption d-flex d-lg-none align-items-center mt-2">
-                                <span>Caption 1</span>
-                            </div>
+
+
+
+
                         </div>
 
                         <div class="spacer-200"></div>
@@ -293,6 +344,7 @@
     <!-- essential scripts -->
      <script src="assets/js/jquery.min.js"></script>
      <script src="assets/js/bootstrap.min.js"></script>
+     <script src="assets/js/slick.js"></script>
      <script src="assets/js/scripts.js"></script>
 </body>
 </html>
