@@ -445,6 +445,60 @@ h1, h2, h3, h4, h5, h6 {
   .wpa_text_block span, .wpa_text_block p {
     font-size: 15px; } }
 
+.loop_carousel {
+  position: relative; }
+  .loop_carousel .slick-list {
+    margin: 0 -12px; }
+    .loop_carousel .slick-list .slick-slide {
+      margin: 0 12px; }
+  .loop_carousel .slide_single span {
+    display: block; }
+  .loop_carousel .slick-next {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    font-weight: 300; }
+
+.single_carousel {
+  position: relative; }
+  .single_carousel .slick-list {
+    margin: 0 -12px; }
+    .single_carousel .slick-list .slick-slide {
+      margin: 0 12px; }
+  .single_carousel .slide_single span {
+    display: block; }
+  .single_carousel .slick-next {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-weight: 300; }
+  @media (max-width: 991px) {
+    .single_carousel .slick-next {
+      top: -10px; } }
+
+.wpa_toggle_block .wpa_toggle_btn span {
+  display: none; }
+  .wpa_toggle_block .wpa_toggle_btn span.grid_show {
+    display: block; }
+
+.wpa_toggle_block .wpa_toggle_btn.grid_hide span.grid_show {
+  display: none; }
+
+.wpa_toggle_block .wpa_toggle_btn.grid_hide span.grid_hide {
+  display: block; }
+
+.wpa_toggle_block .wpa_toggle_images .grid_show {
+  display: block; }
+
+.wpa_toggle_block .wpa_toggle_images .grid_hide {
+  display: none; }
+
+.wpa_toggle_block .wpa_toggle_images.hide_grid .grid_show {
+  display: none; }
+
+.wpa_toggle_block .wpa_toggle_images.hide_grid .grid_hide {
+  display: block; }
+
 /** main screen styles **/
 .wpa_main_screen {
   display: -webkit-box;
