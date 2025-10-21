@@ -281,6 +281,9 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 20px;
   list-style-type: disc; }
 
+.wpa_title_block video {
+  width: 100%; }
+
 @media (max-width: 991px) {
   .wpa_title_block h2, .wpa_title_block h2.title-sm {
     font-size: 25px;

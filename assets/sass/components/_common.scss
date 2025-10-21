@@ -144,6 +144,10 @@
         list-style-type:  disc;
     }
 
+    video {
+        width: 100%;
+    }
+
     @include screen-992 {
         h2, h2.title-sm {
             font-size: 25px; 
