@@ -516,6 +516,21 @@ h1, h2, h3, h4, h5, h6 {
 .wpa_toggle_block .wpa_toggle_images.hide_grid .grid_hide {
   display: block; }
 
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 aspect ratio */
+  overflow: hidden; }
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; }
+
 /** main screen styles **/
 .wpa_main_screen {
   display: -webkit-box;
