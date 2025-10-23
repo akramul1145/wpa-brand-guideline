@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .wpa_title_block h3 {
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 300;
   color: rgba(255, 255, 255, 0.2);
   margin-top: -20px;
   text-transform: capitalize; }
