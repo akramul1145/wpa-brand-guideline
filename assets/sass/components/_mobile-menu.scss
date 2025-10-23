@@ -5,7 +5,7 @@
     top: 0;
     left: 0; 
     z-index: 50;
-    background: $bg-color;
+    background: transparent;
 }
 .wpa_mobile_menu_toggle {
     padding: 12px 24px;
@@ -13,6 +13,7 @@
     border-radius: 30px;
     font-size: 20x;
     font-weight: 500;
+    color: $color-black;
 }
 .wpa_mobile_menu {
     text-align: right;
