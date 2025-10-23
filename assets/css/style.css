@@ -549,6 +549,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   border: 0; }
 
+@media (max-width: 400px) {
+  .wpa_footer_btns .wpa_btn_black {
+    font-size: 14px; } }
+
 /** main screen styles **/
 .wpa_main_screen {
   display: -webkit-box;

@@ -491,3 +491,13 @@
     height:100%;
     border:0;
 }
+
+
+
+.wpa_footer_btns {
+    .wpa_btn_black {
+        @include screen-400 {
+            font-size: 14px;
+        }
+    }
+}
