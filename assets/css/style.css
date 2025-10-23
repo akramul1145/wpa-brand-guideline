@@ -285,10 +285,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize; }
 
 .wpa_title_block h3 {
-  font-size: 40px;
-  font-weight: 300;
+  font-size: 50px;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.2);
-  margin-top: -30px;
+  margin-top: -20px;
   text-transform: capitalize; }
 
 .wpa_title_block p {
@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
   .wpa_title_block h2, .wpa_title_block h2.title-sm {
     font-size: 25px; }
   .wpa_title_block h3 {
-    font-size: 20px; }
+    font-size: 25px; }
   .wpa_title_block p {
     font-size: 15px; }
   .wpa_title_block p.lead {
