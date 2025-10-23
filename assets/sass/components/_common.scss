@@ -10,7 +10,7 @@
     margin-top: 200px;
 
     @include screen-992 {
-        margin-top: 80px;
+        margin-top: 50px;
     }
 }
 
@@ -372,6 +372,7 @@
 
 .loop_carousel {
     position: relative;
+    padding-top: 30px;
     .slick-list {
         margin: 0 -12px;
 
@@ -387,13 +388,13 @@
 
     .slick-next {
         position: absolute;
-        top: -10px; 
+        top: 0; 
         right: 0;
         font-weight: 300;
     }
 
     .slick-prev {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -415,14 +416,19 @@
 
     .slick-next {
         position: absolute;
-        top: 40px;
+        top: 16px;
         right: 0;
         font-weight: 300;
     }
 
+    .slick-prev {
+        display: none !important;
+    }
+
     @include screen-992 {
+        padding-top:  30px;
         .slick-next {
-            top: -10px;
+            top: 0;
         }
     }
 }

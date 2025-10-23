@@ -46,6 +46,12 @@
            text-decoration-thickness: 1px;
            text-underline-offset: 6px; 
         }
+
+        @include screen-992 {
+            a {
+                font-size: 20px;
+            }
+        }
     }
 
     .wpa_nav_block_sub {
@@ -74,13 +80,24 @@
                 }
             }
         }
+
+        @include screen-992 {
+            li {
+                font-size: 20px;
+
+                &::before {
+                    top: 10px;
+                    
+                }
+            }
+        }
     }
 
     @include screen-992 {
         display: block;
         .wpa_nav_block_main {
             width: 100%;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         .wpa_nav_block_sub {

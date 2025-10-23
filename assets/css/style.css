@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 200px; }
   @media (max-width: 991px) {
     .mt-200 {
-      margin-top: 80px; } }
+      margin-top: 50px; } }
 
 .pt-100 {
   padding-top: 100px; }
@@ -479,7 +479,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px; } }
 
 .loop_carousel {
-  position: relative; }
+  position: relative;
+  padding-top: 30px; }
   .loop_carousel .slick-list {
     margin: 0 -12px; }
     .loop_carousel .slick-list .slick-slide {
@@ -488,11 +489,11 @@ h1, h2, h3, h4, h5, h6 {
     display: block; }
   .loop_carousel .slick-next {
     position: absolute;
-    top: -10px;
+    top: 0;
     right: 0;
     font-weight: 300; }
   .loop_carousel .slick-prev {
-    display: none; }
+    display: none !important; }
 
 .single_carousel {
   position: relative; }
@@ -504,12 +505,16 @@ h1, h2, h3, h4, h5, h6 {
     display: block; }
   .single_carousel .slick-next {
     position: absolute;
-    top: 40px;
+    top: 16px;
     right: 0;
     font-weight: 300; }
+  .single_carousel .slick-prev {
+    display: none !important; }
   @media (max-width: 991px) {
-    .single_carousel .slick-next {
-      top: -10px; } }
+    .single_carousel {
+      padding-top: 30px; }
+      .single_carousel .slick-next {
+        top: 0; } }
 
 .wpa_toggle_block .wpa_toggle_btn span {
   display: none; }
@@ -627,6 +632,9 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: underline;
       text-decoration-thickness: 1px;
       text-underline-offset: 6px; }
+    @media (max-width: 991px) {
+      .wpa_navigation_block .wpa_nav_block_main a {
+        font-size: 20px; } }
   .wpa_navigation_block .wpa_nav_block_sub li {
     font-size: 40px;
     font-weight: 300;
@@ -647,10 +655,15 @@ h1, h2, h3, h4, h5, h6 {
       .wpa_navigation_block .wpa_nav_block_sub li.wpa_nav_block_sub_head::before {
         display: none; }
   @media (max-width: 991px) {
+    .wpa_navigation_block .wpa_nav_block_sub li {
+      font-size: 20px; }
+      .wpa_navigation_block .wpa_nav_block_sub li::before {
+        top: 10px; } }
+  @media (max-width: 991px) {
     .wpa_navigation_block {
       display: block; }
       .wpa_navigation_block .wpa_nav_block_main {
         width: 100%;
-        margin-bottom: 40px; }
+        margin-bottom: 20px; }
       .wpa_navigation_block .wpa_nav_block_sub {
         padding-left: 15px; } }
