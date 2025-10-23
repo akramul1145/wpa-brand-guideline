@@ -60,6 +60,7 @@
             li {
                 a { 
                     color: $color-white;
+                    text-transform: capitalize;
 
                     &:hover {
                         color: rgba($color-white, 0.8);
